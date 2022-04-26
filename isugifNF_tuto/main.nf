@@ -4,9 +4,9 @@
 
     script:
     """
-    blastn -db $PWD/DB/blastDB -query $PWD/input.fasta -outfmt 6 -out input.blastout
+    blastn -num_threads $params.threads -db $params.dbDir/$params.dbName -query $params.query -outfmt 6 -out input.blastout
     """
-    
+
   }
 
   println "\nI want to BLAST $params.query to $params.dbDir/$params.dbName using $params.threads CPUs and output it to $params.outdir\n"
