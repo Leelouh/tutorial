@@ -1,3 +1,2 @@
-# tutorial
-Tutorial on how to use nextflow to create a worflow for blast
-A line I wrote on my local computer
+# Tutorial
+Me trying to learn Nextflow without to much anger.
